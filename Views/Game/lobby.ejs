@@ -1,0 +1,12 @@
+<html>
+	<%- include('./Partials/Header'); -%>
+	<body>
+		<h3><%= game.code %></h3>
+		<ul>
+			<% game.players.forEach(p) { %>
+				<li><%= p.username %></li>
+			<% }); %>
+		</ul>
+	</body>
+	<%- include('./Partials/Footer'); -%>
+</html>
